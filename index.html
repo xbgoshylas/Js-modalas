@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="naujas">Naujas</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Data:</th>
+                <th>Numeris:</th>
+                <th>Laikas:</th>
+                <th>Kelias:</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="modal_overlay" id="duomenu_modalas">
+        <div class="modal">
+            <form id="duomenu_forma" action="">
+              <div class="inputai">
+                <div>
+                  <label for="">Data:</label>
+                  <input id="data" type="text">
+                </div>
+                <div>
+                  <label for="">Numeris:</label>
+                  <input id="numeris" type="text">
+                </div>
+                <div>
+                  <label for="">Laikas:</label>
+                  <input id="laikas" type="text">
+                </div>
+                <div>
+                  <label for="">Kelias:</label>
+                  <input id="kelias" type="text">
+                </div>
+              </div>
+              <div class="mygtukas"></div>
+                <button id="main_modal_mygtukas">Sukurti</button>
+                <button id="cancel">Atsaukti</button>
+              </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal_overlay" id="trinti_modalas">
+        <div class="modal">
+            <h2>Ar tikrai norite istrinti ?</h2>
+            <button id="deleteRow">Taip</button>
+            <button id="cancelRow">Atsaukti</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
